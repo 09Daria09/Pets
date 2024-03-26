@@ -1,0 +1,63 @@
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto; 
+    max-width: 800px; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  }
+  
+  .card-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-image {
+    width: 200px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 20px;
+    object-fit: cover; 
+  }
+  
+  .card-details {
+    flex-grow: 1;
+  }
+  
+  .card-title {
+    margin: 0;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+  }
+  
+  .card-age {
+    color: #555;
+    font-size: 1em;
+  }
+  
+  .card-favfoods {
+    color: #444;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .card-favfoods-list {
+    list-style: inside disc; 
+    padding-left: 0;
+  }
+  
+  .card-favfoods-list li {
+    padding: 5px 0;
+    color: #666;
+    transition: color 0.2s ease-in-out; 
+  }
+  
+  .card-favfoods-list li:hover {
+    color: #555; 
+  }
+  

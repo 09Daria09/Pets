@@ -1,0 +1,11 @@
+<div class="card-container">
+  <img [src]="card.photo" alt="{{ card.name }}" class="card-image">
+  <div class="card-details">
+    <h2 class="card-title">{{ card.name }} ({{ card.species }})</h2>
+    <p class="card-age">Age: {{ ageDescription  }}</p>
+    <p class="card-favfoods" *ngIf="card?.favFoods?.length">Favorite Foods:</p>
+    <ul class="card-favfoods-list" *ngIf="card?.favFoods?.length">
+      <li *ngFor="let food of card.favFoods" [innerHTML]="food"></li>
+    </ul>
+  </div>
+</div>
